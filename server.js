@@ -48,7 +48,7 @@ edit selected item
  MyDataSchema.findById(id, (err, result)=>{
        if (err) {console.log(err)}
        else {
-           MyBlogsData.findByIdAndUpdate(req.params.id, 
+           MyDataSchema.findByIdAndUpdate(req.params.id, 
             obj,
              {new: true}, 
              (err, docs)=> {
